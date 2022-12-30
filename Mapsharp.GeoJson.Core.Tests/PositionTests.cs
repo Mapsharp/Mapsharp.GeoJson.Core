@@ -53,9 +53,7 @@ namespace Mapsharp.GeoJson.Core.Tests
         {
             Assert.Throws<ArgumentNullException>(() =>
             {
-#pragma warning disable CS8625 // Cannot convert null literal to non-nullable reference type.
-                Position c = Position.FromEnumerable(null);
-#pragma warning restore CS8625 // Cannot convert null literal to non-nullable reference type.
+                Position c = Position.FromEnumerable(null!);
             });
         }
 
